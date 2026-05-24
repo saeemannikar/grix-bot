@@ -318,10 +318,12 @@ If you see decision_change entries that contradict decisions, flag them clearly.
     await respond('Something went wrong. Please try again.');
   }
 });
-
+const http = require('http');
+http.createServer((req, res) => res.end('Grix is running')).listen(8080);
 // ─── Start ────────────────────────────────────────────────────────────────────
 
 (async () => {
   await app.start();
   console.log('✅ Grix is running — digest on Home tab open');
+  http.createServer((req, res) => res.end('Grix is running')).listen(8080);
 })();
