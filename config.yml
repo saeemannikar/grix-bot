@@ -1,0 +1,22 @@
+branch-defaults:
+  default:
+    environment: grix-production
+    group_suffix: null
+environment-defaults:
+  grix-production:
+    branch: null
+    repository: null
+global:
+  application_name: grix-bot
+  branch: null
+  default_ec2_keyname: null
+  default_platform: Node.js 24 running on 64bit Amazon Linux 2023
+  default_region: us-west-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: null
+  workspace_type: Application
